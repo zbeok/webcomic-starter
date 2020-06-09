@@ -4,29 +4,30 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 
 		// home page
 		.when('/', {
-			templateUrl: 'views/comic.html',
-			controller: 'ComicController'
+			templateUrl: 'views/home.html',
+			controller: 'HomeController'
 		})
 
-		.when('/about', {
-			templateUrl: 'views/about.html',
-			controller: 'AboutController'
+		.when('/mission', {
+			templateUrl: 'views/mission.html',
+			controller: 'MissionController'
 		})
 
-		.when('/archive', {
-			templateUrl: 'views/archive.html',
-			controller: 'ArchiveController'	
+		.when('/products', {
+			templateUrl: 'views/products.html',
+			controller: 'ProductsController'	
 		})
 
-		.when('/comic', {
-			templateUrl: 'views/comic.html',
-			controller: 'ComicController',
+		.when('/careers', {
+			templateUrl: 'views/careers.html',
+			controller: 'CareersController'	
 		})
-
-		.when('/support', {
-			templateUrl: 'views/support.html',
-			controller: 'SupportController'	
-		});
+  
+		.when('/contact', {
+			templateUrl: 'views/contact.html',
+			controller: 'ContactController'	
+		})
+  ;
 
 	$locationProvider.html5Mode(true);
 

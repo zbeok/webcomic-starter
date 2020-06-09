@@ -1,3 +1,3 @@
 angular.module('mainApp', 
 				['ngRoute', 'appRoutes', 
-				 'MainCtrl', 'AboutCtrl','ArchiveCtrl','ComicCtrl', 'SupportCtrl']);
+				 'HomeCtrl', 'MissionCtrl','ProductsCtrl','CareersCtrl', 'ContactCtrl']);
