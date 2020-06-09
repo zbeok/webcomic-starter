@@ -1,5 +1,29 @@
-<div class="jumbotron text-center">
-	<h1>Home Page 4 Life</h1>
-
-	<p>{{ tagline }}</p>
+<div class="row h-100">
+  <div class="col-sm-6 my-auto">
+    <h1>
+      CONTACT US
+    </h1>
+    <p>
+      For product/services info: info@iceesolutions.com
+      For sales:sales@iceesolutions.com
+      For technology support:  support@iceesolutions.com
+    </p>
+<!--     <img src="https://cdn.glitch.com/84bb9c77-ddaf-4b07-a74c-d678ba0acb37%2Foffice_2.163134849_std.jpg?v=1591745714309"/> -->
+  </div>
+  <div id="form" class="col-sm-6 my-auto">
+    <form
+      action="mailto:info@iceesolutions.com"
+      method="post"
+      enctype="text/plain"
+    >
+      Name:
+      <input type="text" name="name" /> 
+      E-mail:
+      <input type="text" name="mail" /><br />
+      Comment:<br />
+      <input type="text" name="comment" size="50" /><br /><br />
+      <input type="submit" value="Send" />
+      <input type="reset" value="Reset" />
+    </form>
+  </div>
 </div>

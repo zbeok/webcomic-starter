@@ -7,7 +7,9 @@ body {
 /*   background-image:url("https://www.trainingzone.co.uk/sites/default/files/learning_technology_solutions_0.jpg"); */
   background-size:cover;
   background-attachment:fixed;
-
+}
+#container{
+  min-height:100vh;
 }
 
 img {
