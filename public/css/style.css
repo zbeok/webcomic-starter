@@ -1,15 +1,17 @@
 /*sitewide*/
 
 body { 
-	padding-top:100px; 
+	padding-top:80px; 
 	font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
 	background-color: #fff;
-/*   background-image:url("https://www.trainingzone.co.uk/sites/default/files/learning_technology_solutions_0.jpg"); */
+  background-image:url("https://www.trainingzone.co.uk/sites/default/files/learning_technology_solutions_0.jpg");
   background-size:cover;
   background-attachment:fixed;
 }
-#container{
+.container-fluid{
+  width:100%;
   min-height:100vh;
+  margin:0;
 }
 
 img {
@@ -76,7 +78,7 @@ p {
 }
 
 /*For smaller screens*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
     .nav a {display: none;}
 	#menubars {
 		position:absolute;
