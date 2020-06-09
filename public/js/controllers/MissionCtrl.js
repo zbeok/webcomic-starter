@@ -1,4 +1,4 @@
-angular.module('AboutCtrl', []).controller('AboutController', function($scope) {
+angular.module('MissionCtrl', []).controller('MissionController', function($scope) {
 
 	$scope.tagline = 'Im sophie....';	
 

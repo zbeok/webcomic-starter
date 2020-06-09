@@ -1,17 +1,20 @@
 /*sitewide*/
+
 .jumbotron {
 	background-color: #eeeeee;
 	padding:50px;
 	border-radius: 10px;
 }
 .navbar {
-
-	margin-bottom:-55px;
+  background-color:black;
+  width:100%;
+  position:fixed;
+  left:0;top:0;
+  
 }
 .nav-bit {
 
 	margin:0 5px 20px 5px;
-	background-color: #ffccff;
 	padding:10px 20px;
 	border-radius: 10px;
 	-webkit-transition: all .7s ease;
@@ -41,6 +44,10 @@
 	border-radius: 10px;
 }
 
+#title {
+	font-size:60px;
+  margin:0;
+}
 img {
 	
 	transition: all .7s ease;
@@ -107,9 +114,6 @@ body {
 }
 .kofi:hover {
 	opacity:.9;
-}
-#title {
-	font-size:70px;
 }
 .comments {
     position:relative;
