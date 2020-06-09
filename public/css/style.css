@@ -1,10 +1,40 @@
 /*sitewide*/
 
+body { 
+	padding-top:100px; 
+	font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
+	background-color: #baddad;
+  background-image:url("https://www.trainingzone.co.uk/sites/default/files/learning_technology_solutions_0.jpg");
+  background-size:cover;
+  background-attachment:fixed;
+	margin:0 15% ;
+
+}
+
+img {
+	
+	transition: all .7s ease;
+}
+a {
+	text-decoration: none !important;
+	transition: all .7s ease;
+}
+p {
+	margin:0;
+}
+
+#title {
+	font-size:48px;
+  margin-bottom:-8px;
+}
 .jumbotron {
 	background-color: #eeeeee;
 	padding:50px;
 	border-radius: 10px;
 }
+
+
+/*//////////////////////////////////// NAVBAR /////////////////////////////////////*/
 .navbar {
   background-color:black;
   width:100%;
@@ -14,7 +44,7 @@
 }
 .nav-bit {
 
-	margin:0 5px 20px 5px;
+	margin:10px 5px 10px 5px;
 	padding:10px 20px;
 	border-radius: 10px;
 	-webkit-transition: all .7s ease;
@@ -39,35 +69,12 @@
 #menubars {
 	display:none;
 	margin:0 10px 20px 10px;
-	background-color: #ffccff;
 	padding:10px 20px;
 	border-radius: 10px;
 }
 
-#title {
-	font-size:60px;
-  margin:0;
-}
-img {
-	
-	transition: all .7s ease;
-}
-a {
-	text-decoration: none !important;
-	transition: all .7s ease;
-}
-p {
-	margin:0;
-}
-body { 
-	padding-top:30px; 
-	font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
-	background-color: #baddad;
-	margin:0 15% ;
-
-}
 /*For smaller screens*/
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 750px) {
     .nav a {display: none;}
 	#menubars {
 		position:absolute;
@@ -106,14 +113,10 @@ body {
 }
 }
 
-/*For the comic page*/
-#img img {
-	height:100%;
-	width:100%;
-	border-radius: 10px;
-}
-.kofi:hover {
-	opacity:.9;
+/*//////////////////////////////////// SECTIONS /////////////////////////////////////*/
+
+.section{
+  min-height:300px;
 }
 .comments {
     position:relative;
@@ -124,65 +127,4 @@ body {
 	border-radius: 10px;
 	padding: 20px;
 	z-index:-1;
-}
-
-.arrows {
-	/*display:inline-block;*/
-	margin:20px 0 -60px 0;
-}
-
-.arrow {
-	display:inline-block;
-	margin:0 2%;
-	background-color: #ffccff;
-	padding:18px 20px;
-	width:60px;
-	border-radius: 30px;
-}
-
-.arrow:hover {
-
-	background-color: #ffaaff;
-	-webkit-transition: all .7s ease;
-	-moz-transition: all .7s ease;
-	-o-transition: all .7s ease;
-	transition: all .7s ease;
-}
-
-/*For the archive*/
-.ch {
-	background-color:#baddad;
-	padding:10px;
-	border-radius: 10px;
-	margin: 20px;
-	-webkit-transition: all .7s ease;
-	-moz-transition: all .7s ease;
-	-o-transition: all .7s ease;
-	transition: all .7s ease;
-
-}
-/*.ch:hover {
-	background-color: #faffaf;
-}*/
-.ch a {
-	text-decoration: none;
-}
-
-.pg {
-	background-color:#bbbddd;
-	padding:10px;
-	border-radius: 10px;
-	margin:5px;
-	width:50px;
-	-webkit-transition: all .7s ease;
-	-moz-transition: all .7s ease;
-	-o-transition: all .7s ease;
-	transition: all .7s ease;
-	display:inline-block;
-}
-.pg:hover {
-	background-color: #8888ff;
-}
-.pg a {
-	text-decoration: none;
 }
