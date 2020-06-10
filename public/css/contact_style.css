@@ -3,13 +3,20 @@
   color:#fff;
   background-color:rgba(0,0,0,.4);
   padding:80px;
-  min-height:100vh;
+  min-height:90vh;
   padding-bottom:-50px;
 }
 #form {
   background-color: black;
-  padding:20px;
+  padding:30px;
   border-radius:10px;
+}
+input{
+  width:100%;
+  background-color:rgba(0,0,0,0);
+  border:0px black;
+  border-bottom:solid 1px gray;
+  color:white;
 }
 .product .btn {
   margin:20px;
