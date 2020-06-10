@@ -7,14 +7,23 @@
 }
 #about{
   color:#fff;
-  background-color:rgba(0,0,0,.6);
+/*   background-color:rgba(0,0,0,.6); */
 }
 #products{
   color:#fff;
-  background-color:rgba(0,0,0,.7);
+  background-color:rgba(0,0,0,.6);
 }
 #careers{
   color:#fff;
-  background-color:rgba(0,0,0,.8);
+  background-color:rgba(0,0,0,.7);
   padding:0 20%;
+}
+.product{
+  margin:20px;
+  padding:80px 0;
+  border-radius:10px;
+  background-color:#000;
+}
+.product .btn {
+  margin:20px;
 }
