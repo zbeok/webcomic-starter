@@ -9,6 +9,7 @@ body {
   background-attachment:fixed;
   background-position: center;
   min-height:100vh;
+  padding-bottom:50px;
   position:relative;
 }
 .container-fluid{
@@ -135,7 +136,7 @@ p {
   color:white;
   position:absolute;
   height:50px;
-  bottom:-50px;
+  bottom:0;
 }
 
 /*/////////////////////////////////// SECTIONS ////////////////////////////////////*/
