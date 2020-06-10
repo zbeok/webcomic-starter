@@ -1,0 +1,16 @@
+
+#contact{
+  color:#fff;
+  background-color:rgba(0,0,0,.4);
+  padding:80px;
+  min-height:100vh;
+  padding-bottom:-50px;
+}
+#form {
+  background-color: black;
+  padding:20px;
+  border-radius:10px;
+}
+.product .btn {
+  margin:20px;
+}
