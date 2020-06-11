@@ -16,18 +16,20 @@ module.exports = function(app) {
     }
   });
   app.post("/email", function(req, res) {
+    if (req.body.comment=="" || req.body.email=="") {
+      return;
+    }
     var mailOptions = {
       from: "sophie@iceesolutions.com",
       to: "sophie@iceesolutions.com",
-      subject: req.name,
-      text: "Name: "+req.params.name+"\nEmail: "+req.params.email+"\n\n"+req.params.comment
+      subject: req.body.name,
+      text: "Name: "+req.body.name+"\nEmail: "+req.body.email+"\n\n"+req.body.comment
     };
-    console.log(req.params);
     transporter.sendMail(mailOptions, function(error, info) {
       if (error) {
         console.log(error);
       } else {
-        console.log("Email sent: " + info.response);
+        console.log("Email sent: " + req.body + "\n"+info.response);
       }
     });
   });
