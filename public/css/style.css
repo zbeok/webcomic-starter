@@ -54,24 +54,24 @@ p {
 	margin:5px;
 	padding:10px 20px;
 	border-radius: 10px;
-	-webkit-transition: all .7s ease;
+/* 	-webkit-transition: all .7s ease;
 	-moz-transition: all .7s ease;
 	-o-transition: all .7s ease;
-	transition: all .7s ease;
-}
+	transition: all .7s ease;*/
+} 
 
 .nav-bit:hover {
 
 	background-color: #ffaaff;
-	transition: all .7s ease;
+/* 	transition: all .7s ease; */
 }
 .nav {
-	-webkit-transition: all .7s ease;
-	-moz-transition: all .7s ease;
-	-o-transition: all .7s ease;
-	transition: all .7s ease;
 	padding:0;
   
+  min-width:45px;min-height:45px;
+  	position:absolute;
+  	right:15px;
+  	top:15px;
 }
 .nav a {
 	text-decoration: none;
@@ -86,7 +86,8 @@ p {
 
 /*For smaller screens*/
 @media screen and (max-width: 900px) {
-    .nav a {display: none;}
+    .nav a {height:0;width:0;opacity:0;}
+  
 	#menubars {
 		position:absolute;
 		display: flex;
@@ -114,13 +115,15 @@ p {
   	padding-top:45px;
   	border-radius: 10px;
   	z-index: 1;
-	-webkit-transition: all .7s ease;
+/* 	-webkit-transition: all .7s ease;
 	-moz-transition: all .7s ease;
 	-o-transition: all .7s ease;
-	transition: all .7s ease;
+	transition: all .7s ease; */
   }
   .nav.responsive a {
     float: none;
+    height:auto;width:auto;
+    opacity:1;
     display: block;
   }
   .nav.responsive .nav-bit {
@@ -130,7 +133,7 @@ p {
   }
 .nav.responsive .nav-bit:hover {
 	background-color: #ffaaff;
-	transition: all .7s ease;
+/* 	transition: all .7s ease; */
 }
 }
 
