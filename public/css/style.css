@@ -1,7 +1,7 @@
 /*sitewide*/
 
 body { 
-	padding:80px 0 50px 0; 
+	padding:70px 0 50px 0; 
 	font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
 	background-color: #fff;
   background-image:url("https://www.trainingzone.co.uk/sites/default/files/learning_technology_solutions_0.jpg");
@@ -51,7 +51,7 @@ p {
 }
 .nav-bit {
   text-align:right;
-	margin:10px 5px 10px 5px;
+	margin:5px;
 	padding:10px 20px;
 	border-radius: 10px;
 	-webkit-transition: all .7s ease;
@@ -66,8 +66,12 @@ p {
 	transition: all .7s ease;
 }
 .nav {
-
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
 	padding:0;
+  
 }
 .nav a {
 	text-decoration: none;
@@ -75,7 +79,7 @@ p {
 
 #menubars {
 	display:none;
-	margin:0 10px 10px 10px;
+	margin:0 10px 20px 10px;
 	padding:10px 20px;
 	border-radius: 10px;
 }
@@ -90,19 +94,29 @@ p {
 	   z-index:9;
 	   text-decoration: none;
 	}
-
+  .nav{
+    
+  min-width:45px;min-height:45px;
+  	position:absolute;
+	flex-direction:column;
+  	right:15px;
+  	top:15px;
+  }
   .nav.responsive {
 
   	position:absolute;
 	flex-direction:column;
-  	right:10px;
-  	top:10px;
+  	right:15px;
+  	top:15px;
   	background-color:#ffccff;
   	margin:0;
-  	padding:10px;
-  	padding-top:40px;
+  	padding:5px;
+  	padding-top:45px;
   	border-radius: 10px;
   	z-index: 1;
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-o-transition: all .7s ease;
 	transition: all .7s ease;
   }
   .nav.responsive a {
