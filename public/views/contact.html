@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="css/contact_style.css" />
-<!-- custom styles -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
 <div id="contact" class="w-100">
   <h1>
@@ -32,10 +32,9 @@
     </div>
     <div id="form" class="col-sm-6 my-auto">
       <form
+        id="myForm"
         target="_top"
-        action="/email"
-        method="post"
-        enctype="text/plain"
+        ng-on-click="subForm();"
       >
         Name:
         <input type="text" name="name" /><br /><br />
