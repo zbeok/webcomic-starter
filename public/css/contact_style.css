@@ -6,6 +6,10 @@
   min-height:90vh;
   padding-bottom:-50px;
 }
+#gen{
+  padding:20px;
+  
+}
 #form {
   background-color: black;
   padding:30px;
@@ -18,9 +22,9 @@ input{
   border-bottom:solid 1px gray;
   color:white;
 }
-table{
+.table{
   background-color:rgba(255,255,255,.6);
-  overflow:scroll;
+
 }
 .btn {
   margin:20px; 
