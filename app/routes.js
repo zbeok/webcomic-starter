@@ -11,14 +11,14 @@ module.exports = function(app) {
   var transporter = nodemailer.createTransport({
     service: "Yahoo",
     auth: {
-      user: "webmaster@iceesolutions.com",
-      pass: "QWqw!@12"
+      user: "sophie@iceesolutions.com",
+      pass: "QWqw12!@"
     }
   });
   app.post("/email", function(req, res) {
     var mailOptions = {
-      from: "webmaster@iceesolutions.com",
-      to: "webmaster@iceesolutions.com",
+      from: "sophie@iceesolutions.com",
+      to: "sophie@iceesolutions.com",
       subject: req.name,
       text: "Name: "+req.name+"\nEmail: "+req.email+"\n\n"+req.comment
     };
