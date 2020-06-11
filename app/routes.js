@@ -12,17 +12,17 @@ module.exports = function(app) {
     service: "Yahoo",
     auth: {
       user: "webmaster@iceesolutions.com",
-      pass: "yourpassword"
+      pass: "QWqw!@12"
     }
   });
   app.post("/email", function(req, res) {
     var mailOptions = {
-      from: "webmaster@iceesolustions.com",
+      from: "webmaster@iceesolutions.com",
       to: "webmaster@iceesolutions.com",
-      subject: "",
-      text: "That was easy!"
+      subject: req.name,
+      text: "Name: "+req.name+"\nEmail: "+req.email+"\n\n"+req.comment
     };
-
+    console.log(req);
     transporter.sendMail(mailOptions, function(error, info) {
       if (error) {
         console.log(error);
