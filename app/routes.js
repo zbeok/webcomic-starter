@@ -12,7 +12,7 @@ module.exports = function(app) {
     service: "Yahoo",
     auth: {
       user: "sophie@iceesolutions.com",
-      pass: "QWqw12!@"
+      pass: "jveoyvtyfjadzxkg"
     }
   });
   app.post("/email", function(req, res) {
@@ -20,9 +20,9 @@ module.exports = function(app) {
       from: "sophie@iceesolutions.com",
       to: "sophie@iceesolutions.com",
       subject: req.name,
-      text: "Name: "+req.name+"\nEmail: "+req.email+"\n\n"+req.comment
+      text: "Name: "+req.params.name+"\nEmail: "+req.params.email+"\n\n"+req.params.comment
     };
-    console.log(req);
+    console.log(req.params);
     transporter.sendMail(mailOptions, function(error, info) {
       if (error) {
         console.log(error);
